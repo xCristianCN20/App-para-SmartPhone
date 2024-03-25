@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageV2"
+                android:layout_width="133dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtNombreS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="#CCCCCC"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/imageV2"
+                app:layout_constraintTop_toTopOf="@+id/imageV2" />
+
+            <TextView
+                android:id="@+id/txtDireccS"
+                android:layout_width="82dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="#CCCCCC"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/imageV2"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombreS" />
+
+            <ImageView
+                android:id="@+id/ivInfoS"
+                android:layout_width="21dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/infoicon"
+                app:layout_constraintEnd_toEndOf="@+id/imageV2"
+                app:layout_constraintTop_toTopOf="@+id/imageV2" />
+
+            <TextView
+                android:id="@+id/txtIdS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#3B3B3B"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivInfoS"
+                app:layout_constraintStart_toStartOf="@+id/ivInfoS"
+                app:layout_constraintTop_toBottomOf="@+id/ivInfoS" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>

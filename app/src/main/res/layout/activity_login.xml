@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".LoginActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txtVinc"
+                android:layout_width="149dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="VINC CODE"
+                android:inputType="textPersonName|textCapCharacters"
+                android:textColor="#DCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="95dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#EDB526"
+                android:onClick="inciarSesion"
+                android:text="Login"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/txtVinc"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="@+id/txtVinc"
+                app:layout_constraintTop_toBottomOf="@+id/txtVinc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>

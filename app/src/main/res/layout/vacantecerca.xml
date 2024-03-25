@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgV2"
+                android:layout_width="142dp"
+                android:layout_height="51dp"
+                android:src="@drawable/card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtNombreV"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:text="TextView"
+                android:textColor="#CCCCCC"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/imgV2"
+                app:layout_constraintTop_toTopOf="@+id/imgV2" />
+
+            <TextView
+                android:id="@+id/txtEmpleador"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="2dp"
+                android:text="TextView"
+                android:textColor="#CCCCCC"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/imgV2"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombreV" />
+
+            <ImageView
+                android:id="@+id/ivInfoV"
+                android:layout_width="21dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/infoicon"
+                app:layout_constraintEnd_toEndOf="@+id/imgV2"
+                app:layout_constraintTop_toTopOf="@+id/imgV2" />
+
+            <TextView
+                android:id="@+id/txtIdVacante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#3B3B3B"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivInfoV"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/ivInfoV"
+                app:layout_constraintTop_toBottomOf="@+id/ivInfoV" />
+
+            <TextView
+                android:id="@+id/txtIdTrb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#3B3B3B"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtEmpleador"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@+id/txtEmpleador"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpleador" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
